@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: url('https://picsum.photos/640/480?random');
+  background: url('https://picsum.photos/640/480/?random');
   background-size: cover;
   color: #222;
   font-family: sans-serif;
