@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simple search</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#ed1c24">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://app.tanukizzan.com/gaty-search" />
+  <meta property="og:title" content="Simple search" />
+  <meta property="og:description" content="背景が毎回変わる検索サイトです。" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <main>
+    <form class="search-area" onsubmit="return false;">
+      <input type="search" name="search" id="window" autofocus>
+      <i class="fas fa-search"></i>
+      <i class="fas fa-microphone" id="speak-button"></i>
+    </form>
+    <div class="button-area">
+      <button id="google">Google</button>
+      <button id="yahoo">Yahoo!</button>
+      <button id="bing">Bing</button>
+      <button id="ddg">DuckDuckGo</button>
+      <ul>
+        <li class="menu">
+          <button><i class="fas fa-ellipsis-h"></i></button>
+          <ul>
+            <li><a href="https://app.tanukizzan.com/gaty-search/">GATY search</a></li>
+            <li><a href="https://app.tanukizzan.com/howto-search/">HowTo search</a></li>
+            <li><a href="https://app.tanukizzan.com">他のアプリ</a></li>
+            <li><a href="https://github.com/tanukizzan/gaty-search/wiki">使い方</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>

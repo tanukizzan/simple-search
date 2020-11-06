@@ -1,0 +1,158 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  background: url('https://picsum.photos/640/480');
+  background-size: cover;
+  color: #222;
+  font-family: sans-serif;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  font-size: 16px;
+  table-layout: fixed;
+  user-select: none;
+}
+
+main {
+  flex: 1;
+  width: 90%;
+  max-width: 30em;
+  margin: 2em auto;
+}
+
+/* 検索窓 */
+form input[type="search"] {
+	-webkit-appearance:none;
+}
+
+.search-area #window {
+  width: 100%;
+  line-height: 2.5em;
+  font-size: 1.2em;
+  padding: 0 42px;
+  border-radius: 5px 5px 0 0;
+  border: solid 1px #dfe1e5;
+  border-bottom: none;
+  outline: none;
+}
+
+/* autocomplete時の背景色無効 */
+@keyframes onAutoFillStart { from {} to {}}
+
+#window:-webkit-autofill {
+    animation-name: onAutoFillStart;
+    transition: background-color 50000s ease-in-out 0s;
+}
+
+.search-area {
+  position: relative;
+}
+
+.search-area .fa-search {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  color: #5F6368;
+}
+
+.search-area .fa-microphone {
+  position: absolute;
+  bottom: 0.85em;
+  right: 1em;
+  font-size: 18px;
+  color: #5F6368;
+}
+
+.search-area .fa-microphone:hover {
+  cursor: pointer;
+}
+
+/* 中央のボタン */
+.button-area {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  border: solid 1px #dfe1e5;
+  border-radius: 0 0 5px 5px;
+  background: #fff;
+}
+
+.button-area button {
+  color: #5F6368;
+  background: transparent;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.button-area button:hover {
+  text-decoration: underline;
+}
+
+/* プルダウンメニュー */
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+.menu {
+  display: inline-block;
+  position: relative;
+}
+ 
+.menu > ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 9em;
+  background-color: #fff;
+  height: 0;
+  overflow: hidden;
+}
+
+.menu > ul li {
+  line-height: 2em;
+  padding-left: 1em;
+}
+
+.menu:hover > ul {
+  height: auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+/* フッター */
+footer {
+  bottom: 0;
+  line-height: none;
+  display: flex;
+  margin: 0;
+  cursor: default;
+}
+
+footer p {
+  background: #282828;
+  color: #fff;
+  margin: 0;
+  padding: 3px 5px;
+  border-radius: 0 10px 0 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #5F6368;
+  margin: 1rem 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
