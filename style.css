@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: url('https://picsum.photos/640/480/?random');
+  background: url('https://placeimg.com/1000/800/nature?random');
   background-size: cover;
   color: #222;
   font-family: sans-serif;
@@ -134,8 +134,10 @@ footer {
   bottom: 0;
   line-height: none;
   display: flex;
+  flex-direction: row-reverse;
   margin: 0;
   cursor: default;
+  opacity: 0.6;
 }
 
 footer p {
@@ -143,7 +145,7 @@ footer p {
   color: #fff;
   margin: 0;
   padding: 3px 5px;
-  border-radius: 0 10px 0 0;
+  border-radius: 3px 0 0 0;
 }
 
 a {
@@ -155,4 +157,8 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+footer a {
+  color: #fff;
 }
