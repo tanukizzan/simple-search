@@ -23,10 +23,17 @@ main {
   margin: 2em auto;
 }
 
-/* 検索窓 */
-form input[type="search"] {
-	-webkit-appearance:none;
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #5F6368;
+  margin: 1rem 0;
 }
+
+a:hover {text-decoration: underline;}
+
+/* 検索窓 */
+form input[type="search"] {-webkit-appearance:none;}
 
 .search-area #window {
   width: 100%;
@@ -43,32 +50,22 @@ form input[type="search"] {
 @keyframes onAutoFillStart { from {} to {}}
 
 #window:-webkit-autofill {
-    animation-name: onAutoFillStart;
-    transition: background-color 50000s ease-in-out 0s;
+  animation-name: onAutoFillStart;
+  transition: background-color 50000s ease-in-out 0s;
 }
 
-.search-area {
-  position: relative;
-}
+.search-area {position: relative;}
 
-.search-area .fa-search {
-  position: absolute;
-  top: 1em;
-  left: 1em;
-  color: #5F6368;
-}
-
-.search-area .fa-microphone {
+.search-area .fa-search, .search-area .fa-microphone {
   position: absolute;
   bottom: 0.85em;
-  right: 1em;
   font-size: 18px;
   color: #5F6368;
 }
+.search-area .fa-search {left: 0.85em;}
+.search-area .fa-microphone {right: 1em;}
 
-.search-area .fa-microphone:hover {
-  cursor: pointer;
-}
+.search-area .fa-microphone:hover {cursor: pointer;}
 
 /* 中央のボタン */
 .button-area {
@@ -91,9 +88,7 @@ form input[type="search"] {
   outline: none;
 }
 
-.button-area button:hover {
-  text-decoration: underline;
-}
+.button-area button:hover {text-decoration: underline;}
 
 /* プルダウンメニュー */
 ul,
@@ -102,6 +97,9 @@ li {
   margin: 0;
   padding: 0;
 }
+
+ul li a .fas {margin-right: 5px;}
+ul li a:hover .fas {color: #ff0000;}
  
 .menu {
   display: inline-block;
@@ -112,7 +110,7 @@ li {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 9em;
+  width: 8em;
   background-color: #fff;
   height: 0;
   overflow: hidden;
@@ -148,17 +146,4 @@ footer p {
   border-radius: 3px 0 0 0;
 }
 
-a {
-  cursor: pointer;
-  text-decoration: none;
-  color: #5F6368;
-  margin: 1rem 0;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-footer a {
-  color: #fff;
-}
+footer a {color: #fff;}
